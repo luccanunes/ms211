@@ -12,15 +12,25 @@ plotar_funcao(f, "x³ - 5x")
 
 # Aplicando método de Newton em f para x0 = 1
 print(f"Aproximação da raiz com x0 = 1 limitado a 20 iterações: {newton_lucca(1, f, df, False, 20)}")
-
 # Aplicando método de Newton em f para x0 = -1
 print(f"Aproximação da raiz com x0 = -1 limitado a 20 iterações: {newton_lucca(-1, f, df, False, 20)}")
 
 # Aplicando método de Newton em f para x0 = 0.5
 print(f"Aproximação da raiz com x0 = 0.5 limitado a 20 iterações: {newton_lucca(0.5, f, df, False, 20)}")
-
 # Aplicando método de Newton em f para x0 = -0.5
 print(f"Aproximação da raiz com x0 = -0.5 limitado a 20 iterações: {newton_lucca(-0.5, f, df, False, 20)}")
 
-# Aplicando método de Newton em f para x0 = -0.5
-print(f"Aproximação da raiz com x0 = -0.5 limitado a 20 iterações: {newton_lucca(-0.5, f, df, False, 20)}")
+# Aplicando método de Newton em f para x0 = √5 - 1
+print(f"Aproximação da raiz com x0 = √5 - 1 limitado a 20 iterações: {newton_lucca(5**.5 - 1, f, df, False, 21)}")
+# Aplicando método de Newton em f para x0 = -(√5 - 1)
+print(f"Aproximação da raiz com x0 = -(√5 - 1) limitado a 20 iterações: {newton_lucca(1 - 5**.5, f, df, False, 21)}")
+
+# Aplicando método de Newton em f para x0 = 1.5
+print(f"Aproximação da raiz com x0 = 1.5 limitado a 20 iterações: {newton_lucca(1.5, f, df, False, 20)}")
+# Aplicando método de Newton em f para x0 = -1.5
+print(f"Aproximação da raiz com x0 = -1.5 limitado a 20 iterações: {newton_lucca(-1.5, f, df, False, 20)}")
+
+# Aplicando método de Newton em f para x0 = 3.5
+print(f"Aproximação da raiz com x0 = 3.5 limitado a 20 iterações: {newton_lucca(3.5, f, df, False, 20)}")
+# Aplicando método de Newton em f para x0 = -3.5
+print(f"Aproximação da raiz com x0 = -3.5 limitado a 20 iterações: {newton_lucca(-3.5, f, df, False, 20)}")
