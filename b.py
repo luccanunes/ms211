@@ -28,7 +28,7 @@ plt.show()
 
 dados_execucao = []
 x = []
-newton(0.7, f, derivada_f, dados_execucao, x)
+newton(0.7, f, derivada_f, dados_execucao, x, False, 6)
 plt.plot(x, dados_execucao)
 plt.title('Execução de Newton com x0 = 0.7')
 plt.xlabel('Número da iteração (k)')
