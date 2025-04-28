@@ -1,5 +1,5 @@
 def newton(x0, f, f_linha, dados_iteracao=[], x=[], show=False, max_iter = 1000):
-    ant = 0
+    ant = x0+1
     i = 0
     dados_iteracao.append(x0)
     x.append(i)
