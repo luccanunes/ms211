@@ -1,4 +1,4 @@
-from newton import newton_lucca
+from newton import newton
 from plot import plotar_funcao
 
 def f(x):
@@ -11,10 +11,10 @@ def df(x):
 plotar_funcao(f, "∛x")
 
 # Aplicando método de Newton em f para x0 = 1
-print(f"Aproximação da raiz com x0 = 1 limitado a 20 iterações: {newton_lucca(1, f, df, True, 20)}")
+print(f"Aproximação da raiz com x0 = 1 limitado a 20 iterações: {newton(1, f, df, show=True, max_iter=10, eps=1e-10)}")
 
 # Aplicando método de Newton em f para x0 = 0.00000001
-print(f"Aproximação da raiz com x0 = 0.00000001 limitado a 20 iterações: {newton_lucca(1e-8, f, df, True, 20)}")
+print(f"Aproximação da raiz com x0 = 0.00000001 limitado a 20 iterações: {newton(1e-8, f, df, show=True, max_iter=10, eps=1e-10)}")
 
 
 # Usando a expressão simplificada de f(xn)/df(xn) para evitar números imaginários:
